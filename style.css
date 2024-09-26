@@ -25,3 +25,39 @@ border-bottom: 1px solid #ffd885
 .textoContraste{
     font-size: 20px !important;
 }
+
+/* Samsung Galaxy S8+ */
+@media only screen and (min-width: 360px) and (max-width: 414px) {
+    .iconosMobile{
+        flex-wrap: wrap;
+    }
+  }
+  
+/* iPhone X, XS, 11 Pro */
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+    .iconosMobile{
+        flex-wrap: wrap;
+    }
+  }
+  
+/* iPhone XR, 11 */
+@media only screen and (min-width: 414px) and (max-width: 896px) {
+    .iconosMobile{
+        flex-wrap: wrap;
+    }
+  }
+  
+  /* iPhone 12, 12 Pro */
+@media only screen and (min-width: 390px) and (max-width: 844px) {
+    .iconosMobile{
+        flex-wrap: wrap;
+    }
+  }
+  
+
+
+
+
+  
+  
+  
