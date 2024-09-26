@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('./images/background.png');
+    background-size: auto;
+}
+
+
+.linkNav:hover{
+border-bottom: 1px solid #ffd885
+}
+
+
+.textoIconos{
+    color: #E4D5AB;
+}
+
+.linea{
+   background-color: #E4D5AB !important;
+}
+
+.textoContraste{
+    font-size: 20px !important;
+}
