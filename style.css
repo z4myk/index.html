@@ -1,21 +1,138 @@
+:root{
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
+    
     margin: 0;
 }
 
+html::-webkit-scrollbar{
+    background-color: black !important;
+    border-radius: 15x;
+    width: 10px;
+
+  }
+  html::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255) !important;
+    width: 10px;
+    border-radius: 20px;
+  }
+  
+
+
 body {
-    background-image: url('./images/background.png');
-    background-size: auto;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./images/background.png');
+    background-size: cover;
+ 
+    
 }
 
+.background1{
+    background-color: #211D1D;
+}
 
+.linkHeader:hover{
+    border-bottom: 1px solid #ffffff !important;
+}
+
+.linkNav{
+    font-size: 1.2rem;
+    transition: color 0.7s ease, border-bottom 0.7s ease;
+}
 .linkNav:hover{
-border-bottom: 1px solid #ffd885
+border-bottom: 1px solid #ffffff !important;
+color: #9e9e9e !important ;
+
 }
 
+.textoHeader{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+   font-weight: 600;
+   font-style: bold;
+   font-size: 21px;
+    
+}
+
+.cardIconos {
+    transition: transform 0.3s ease-in-out; /* Hace que la transformación sea suave */
+    transform: scale(1); /* Estado inicial sin zoom */
+    cursor: pointer;
+}
+
+.cardIconos:hover {
+    transform: scale(1.1); /* Aumenta el tamaño un 10% al hacer hover */
+}
+
+.textoTituloAirpods{
+    color: #FFD885;
+    
+}
+.tituloAirpodGeneral{
+    font-size: 3.5rem;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+   font-weight: 700;
+    font-style: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tituloAirpod{
+   font-size: 3.2rem;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+   font-weight: 700;
+    font-style: bold;
+}
+
+.parrafoAirpod{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+   font-weight: 700;
+    font-style: bold;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.parrafoBannerMujer{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+   font-weight: 700;
+    font-style: bold;
+    
+}
+
+.textoTecnologia{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+   font-weight: 700;
+    font-style: bold;
+    font-size: 2.2rem;
+}
 
 .textoIconos{
     color: #E4D5AB;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+   font-weight: 700;
+    font-style: bold;
+    font-size: 1.4rem;
+}
+
+.textoAirpods{
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+   
+    font-style: bold;
+}
+
+.textoAirpodsTitulo{
+    font-size: 3rem;
+    
 }
 
 .linea{
@@ -23,13 +140,120 @@ border-bottom: 1px solid #ffd885
 }
 
 .textoContraste{
-    font-size: 20px !important;
+    font-size: 22px !important;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
 }
+
+
+
+
+.airpodpro3{
+    text-shadow: none;
+}
+
+
+
+.banner-section {
+    overflow-x: hidden;
+    background-color: #fed981;
+}
+
+
+
+.banner-image {
+    margin-left: 200px !important; 
+    height: auto;/* Ajusta este valor según necesites */
+}
+
+
+.garabato{
+    margin-left: 100px !important; 
+    
+}
+
+.banner-section {
+    display: flex; /* Usar flexbox para la sección */
+    align-items: flex-start; /* Alinear al principio */
+}
+
+.row {
+    width: 100%; /* Asegurar que la fila ocupe el ancho completo */
+}
+
+.col-sm-12.col-md-6 {
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: flex-start; /* Alinear al inicio */
+}
+
+.garabato {
+    align-self: flex-end; /* Alinear la imagen 'garabato' al final del contenedor */
+    margin-top: auto; /* Empujar hacia abajo */
+}
+
+
+
+.overflow{
+    overflow-x: hidden !important ;
+}
+
 
 /* Samsung Galaxy S8+ */
 @media only screen and (min-width: 360px) and (max-width: 414px) {
     .iconosMobile{
         flex-wrap: wrap;
+    }
+
+    .mobileVideo{
+        width: 100%;
+    }
+
+    .parrafoAirpod{
+        font-size: 15px;
+    }
+
+    .banner-image {
+      width: auto;
+        
+    }
+
+    .cardIconos:hover{
+        transform: none;
+    }
+
+
+    .banner-image {
+        margin-left: 5px !important; /* Ajusta este valor según necesites */
+    }
+
+    .garabato{
+        margin-left: 30px !important; 
+    }
+
+    .garabato2{
+        display: none;
+      
+    }
+    
+
+    .textoHeader{
+        font-size: 11px;
+    }
+
+
+    .tituloAirpod{
+        font-size: 1.5rem;
+    }
+
+    .tituloAirpodGeneral{
+        font-size: 2.5rem;
+    }
+
+    
+    .parrafoAirpod{
+        font-size: 10px;
     }
   }
   
@@ -38,12 +262,79 @@ border-bottom: 1px solid #ffd885
     .iconosMobile{
         flex-wrap: wrap;
     }
+
+    .mobileVideo{
+        width: 100%;
+    }
+
+    .parrafoAirpod{
+        font-size: 15px;
+    }
+
+
+    .banner-image {
+        margin-left: 5px !important; /* Ajusta este valor según necesites */
+    }
+
+    .cardIconos:hover{
+        transform: none;
+    }
+
+    .garabato{
+        margin-left: 50px !important; 
+    }
+
+    .garabato2{
+        display: none;
+    }
+
+    .textoHeader{
+        font-size: 13px;
+    }
+
+    .tituloAirpodGeneral{
+        font-size: 2.5rem;
+    }
   }
   
 /* iPhone XR, 11 */
 @media only screen and (min-width: 414px) and (max-width: 896px) {
     .iconosMobile{
         flex-wrap: wrap;
+    }
+
+    .mobileVideo{
+        width: 100%;
+    }
+
+    .parrafoAirpod{
+        font-size: 15px;
+    }
+
+    .banner-image {
+        margin-left: 5px !important; /* Ajusta este valor según necesites */
+    }
+
+    .cardIconos:hover{
+        transform: none;
+    }
+
+    .garabato{
+        margin-left: 50px !important; 
+    }
+
+
+    .garabato2{
+        display: none;
+    }
+
+    .textoHeader{
+        font-size: 11px;
+    }
+
+
+    .tituloAirpodGeneral{
+        font-size: 2.5rem;
     }
   }
   
@@ -52,6 +343,36 @@ border-bottom: 1px solid #ffd885
     .iconosMobile{
         flex-wrap: wrap;
     }
+
+    .mobileVideo{
+        width: 100%;
+    }
+
+    .parrafoAirpod{
+        font-size: 15px;
+    }
+
+    .cardIconos:hover{
+        transform: none;
+    }
+
+
+    .garabato{
+        margin-left: 50px !important; 
+    }
+ 
+
+    .garabato2{
+        display: none;
+    }
+
+    .textoHeader{
+        font-size: 11px;
+    }
+
+    .tituloAirpodGeneral{
+        font-size: 2.5rem;
+    }
   }
   
 
@@ -59,5 +380,5 @@ border-bottom: 1px solid #ffd885
 
 
   
-  
+
   
